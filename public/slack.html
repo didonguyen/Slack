@@ -5,11 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slack</title>
-    <link rel="stylesheet" href="./slack/slack.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./slack.css">
 </head>
 <body>
     <div class="slack">
-
+        <div class="left-navbar">
+            <div class="namespaces">
+                <img src="./assets/google_logo.png" alt="" class="namespace__avatar">
+                <img src="./assets/facebook_logo.png" alt="" class="namespace__avatar">
+            </div>
+            <div class="room">
+                <span class="room__title active">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    general
+                </span>
+                <span class="room__title">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    random
+                </span>
+                <span class="room__title">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    your chanel
+                </span>
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="title">
+                <span>
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    general
+                </span>
+                <span>3 users</span>
+            </div>
+            <div class="history">
+                <ul>
+                    <li>
+                        <div class="message">
+                            <div class="message__avatar">
+                                <img src="./assets/google_logo.png" alt="">
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="message__username">
+                                        Robert
+                                    </span>
+                                    <span class="message__time">
+                                        11:59 AM
+                                    </span>
+                                </div>
+                                <div class="message__text">
+                                    This channel is for working on a project. Hold meetings, share docs, and make decisions together with your team. Edit description
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="message">
+                            <div class="message__avatar">
+                                <img src="./assets/google_logo.png" alt="">
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="message__username">
+                                        Robert
+                                    </span>
+                                    <span class="message__time">
+                                        11:59 AM
+                                    </span>
+                                </div>
+                                <div class="message__text">
+                                    This channel is for working on a project. Hold meetings, share docs, and make decisions together with your team. Edit description
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="message">
+                            <div class="message__avatar">
+                                <img src="./assets/google_logo.png" alt="">
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="message__username">
+                                        Robert
+                                    </span>
+                                    <span class="message__time">
+                                        11:59 AM
+                                    </span>
+                                </div>
+                                <div class="message__text">
+                                    This channel is for working on a project. Hold meetings, share docs, and make decisions together with your team. Edit description
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="typing-area">
+                <input placeholder="Message #" class="typing-input" type="text">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </div>
+        </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./script.js"></script>

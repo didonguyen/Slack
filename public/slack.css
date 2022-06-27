@@ -1,0 +1,159 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slack {
+    display: flex;
+    height: 100vh;
+}
+
+.left-navbar {
+    display: flex;
+    width: 275px;
+    background-color: #212121;
+}
+
+.namespaces {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px #555;
+    padding-top: 35px;
+}
+
+.namespace__avatar {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #333;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.namespace__avatar:hover {
+    filter: brightness(80%);
+}
+
+.room {
+    flex: 1;
+    padding-top: 38px;
+}
+
+.room__title {
+    display: block;
+    padding: 6px 16px;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+
+.room__title.active {
+    color: #FFF;
+    background-color: #5db09d;
+}
+
+.room__title:hover {
+    cursor: pointer;
+    background-color: #666666;
+}
+
+.chat-content {
+    flex: 1;
+    background-color: #1a1d21;
+    color: #c6d2d3;
+    padding: 10px 0;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px 0;
+    border-bottom: solid 1px #555;
+}
+
+.title span:first-child {
+    padding-left: 10px;
+}
+
+.history {
+    padding: 0 10px;
+}
+
+.history ul {
+    padding-left: 0;
+}
+
+.history li {
+    list-style: none;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.message__avatar img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #333;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.message__username {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.message__time {
+    font-weight: 400;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.message__text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.typing-area {
+    display: flex;
+    align-items: center;
+    background-color: #212b31;
+    padding: 0 15px;
+    margin: 10px 0;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.typing-area i {
+    margin-left: 10px;
+}
+
+.typing-area i:hover {
+    cursor: pointer;
+}
+
+.typing-input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: #212b31;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+}
+
+.typing-input:focus-visible {
+    outline: none;
+}
