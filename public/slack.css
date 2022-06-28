@@ -61,6 +61,10 @@ body {
     background-color: #666666;
 }
 
+.room__title i {
+    min-width: 20px;
+}
+
 .chat-content {
     flex: 1;
     background-color: #1a1d21;
@@ -156,4 +160,10 @@ body {
 
 .typing-input:focus-visible {
     outline: none;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: #FFF;
 }

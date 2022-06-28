@@ -12,11 +12,11 @@
     <div class="slack">
         <div class="left-navbar">
             <div class="namespaces">
-                <img src="./assets/google_logo.png" alt="" class="namespace__avatar">
-                <img src="./assets/facebook_logo.png" alt="" class="namespace__avatar">
+                <!-- <img src="./assets/google_logo.png" alt="" class="namespace__avatar">
+                <img src="./assets/facebook_logo.png" alt="" class="namespace__avatar"> -->
             </div>
             <div class="room">
-                <span class="room__title active">
+                <!-- <span class="room__title active">
                     <i class="fa fa-hashtag" aria-hidden="true"></i>
                     general
                 </span>
@@ -27,16 +27,16 @@
                 <span class="room__title">
                     <i class="fa fa-hashtag" aria-hidden="true"></i>
                     your chanel
-                </span>
+                </span> -->
             </div>
         </div>
         <div class="chat-content">
             <div class="title">
-                <span>
-                    <i class="fa fa-hashtag" aria-hidden="true"></i>
-                    general
+                <span class="title__room-name">
+                    <!-- <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    general -->
                 </span>
-                <span>3 users</span>
+                <span class="title__number-users">3 users</span>
             </div>
             <div class="history">
                 <ul>
@@ -102,13 +102,21 @@
                     </li>
                 </ul>
             </div>
-            <div class="typing-area">
-                <input placeholder="Message #" class="typing-input" type="text">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-            </div>
+            <form id="user-input">
+                <div class="typing-area">
+                    <input placeholder="Message #" class="typing-input" type="text">
+                    <button type="submit" class="send-button">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </form>
         </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./script.js"></script>
+    <script src="./joinNs.js"></script>
+    <script src="./joinRoom.js"></script>
+
 </body>
 </html>
